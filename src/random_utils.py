@@ -1,6 +1,11 @@
 import requests
 import re
 
+# this class is used by get_weather function below
+# no need to write unit tests for this specific class
+# weatherstack.com is a real site
+# when writing your unit test for get_weather please assume that your tests run
+# in an environment where you lack access to a valid API key for weatherstack.co
 class WeatherRetriever:
 
     def __init__(self, api_key: str):

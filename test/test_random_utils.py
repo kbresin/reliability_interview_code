@@ -1,5 +1,5 @@
 from src.random_utils import RandomUtils
 
-def test_reverse_string():
+def test_is_valid_email():
     random_utils = RandomUtils()
-    assert random_utils.reverse_string("Hello, World!") == "!dlroW ,olleH"
+    assert random_utils.is_palindrome("racecar")
