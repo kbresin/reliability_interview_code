@@ -30,7 +30,7 @@ class RandomUtils:
         vowels = 'aeiou'
         return sum(1 for char in s.lower() if char in vowels)
 
-    def is_valid_email(email: str) -> bool:
+    def is_valid_email(self, email: str) -> bool:
         pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
         return re.match(pattern, email) is not None
 
