@@ -26,9 +26,9 @@ class RandomUtils:
         clean_s = ''.join(char.lower() for char in s if char.isalnum())
         return clean_s == clean_s[::-1]
 
-    def count_vowels(self, s: str):
-        vowels = 'aeiou'
-        return sum(1 for char in s.lower() if char in vowels)
+    # calculate_discount(10, 0.1) -> 9.0
+    def calculate_discount(self, base_price: float, discount_percent: float) -> float:
+        return base_price - base_price * discount_percent
 
     def is_valid_email(self, email: str) -> bool:
         pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
